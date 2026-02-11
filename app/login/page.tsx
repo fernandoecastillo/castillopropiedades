@@ -4,6 +4,7 @@ import React from "react"
 
 import { useState } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Eye, EyeOff } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
@@ -36,12 +37,15 @@ export default function LoginPage() {
     <div className="flex min-h-screen items-center justify-center bg-secondary px-4">
       <div className="w-full max-w-md">
         <div className="mb-8 text-center">
-          <Link href="/" className="inline-flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-md bg-primary">
-              <span className="text-base font-bold text-primary-foreground font-serif">H</span>
-            </div>
-            <span className="text-2xl font-bold tracking-tight text-foreground font-serif">
-              Habitat
+          <Link href="/" className="inline-block">
+            <span className="relative mx-auto block h-14 w-44">
+              <Image
+                src="/images/logo.png"
+                alt="F. Castillo Propiedades"
+                fill
+                className="object-contain"
+                priority
+              />
             </span>
           </Link>
           <p className="mt-3 text-sm text-muted-foreground">

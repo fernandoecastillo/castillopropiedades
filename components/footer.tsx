@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { Mail, MapPin, Phone } from "lucide-react"
 
 export function Footer() {
@@ -8,13 +9,17 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-3">
           <div>
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-9 w-9 items-center justify-center rounded-md bg-accent">
-                <span className="text-sm font-bold text-accent-foreground font-serif">H</span>
-              </div>
-              <span className="text-xl font-bold tracking-tight font-serif">Habitat</span>
+              <span className="relative block h-11 w-36">
+                <Image
+                  src="/images/logo.png"
+                  alt="F. Castillo Propiedades"
+                  fill
+                  className="object-contain brightness-0 invert"
+                />
+              </span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-primary-foreground/70">
-              Inmobiliaria premium dedicada a encontrar el hogar perfecto para cada persona. Mas de 15 anos de experiencia nos avalan.
+              Inmobiliaria dedicada a encontrar el hogar perfecto para cada persona. Experiencia y confianza en el mercado inmobiliario de Mar del Plata.
             </p>
           </div>
 
@@ -23,7 +28,7 @@ export function Footer() {
             <ul className="flex flex-col gap-3 text-sm text-primary-foreground/70">
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 shrink-0 text-accent" />
-                Av. Libertador 1234, CABA, Argentina
+                Mar del Plata, Buenos Aires, Argentina
               </li>
               <li className="flex items-center gap-2">
                 <Phone className="h-4 w-4 shrink-0 text-accent" />
@@ -31,7 +36,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Mail className="h-4 w-4 shrink-0 text-accent" />
-                info@habitat-inmobiliaria.com
+                info@fcastillopropiedades.com
               </li>
             </ul>
           </div>
@@ -80,7 +85,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 border-t border-primary-foreground/10 pt-8 text-center text-sm text-primary-foreground/50">
-          {"© 2026 Habitat Inmobiliaria. Todos los derechos reservados."}
+          {"© 2026 F. Castillo Propiedades. Todos los derechos reservados."}
         </div>
       </div>
     </footer>

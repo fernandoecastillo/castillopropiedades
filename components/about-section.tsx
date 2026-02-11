@@ -39,7 +39,7 @@ export function AboutSection() {
             Tu aliado inmobiliario
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-pretty text-muted-foreground leading-relaxed">
-            En Habitat nos dedicamos a conectar personas con su hogar ideal. Somos una inmobiliaria con mas de 15 anos de experiencia en el mercado, especializada en propiedades residenciales y comerciales en las zonas mas exclusivas.
+            En F. Castillo Propiedades nos dedicamos a conectar personas con su hogar ideal. Somos una inmobiliaria con amplia experiencia en el mercado de Mar del Plata, especializada en propiedades residenciales y comerciales en las mejores zonas de la ciudad.
           </p>
         </div>
 

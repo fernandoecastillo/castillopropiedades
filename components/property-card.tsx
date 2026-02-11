@@ -28,8 +28,8 @@ export function PropertyCard({ property }: { property: Property }) {
         <Badge
           className={`absolute top-3 left-3 ${
             property.type === "Venta"
-              ? "bg-accent text-accent-foreground hover:bg-accent/90"
-              : "bg-primary text-primary-foreground hover:bg-primary/90"
+              ? "bg-primary text-primary-foreground hover:bg-primary/90"
+              : "bg-accent text-accent-foreground hover:bg-accent/90"
           }`}
         >
           {property.type}

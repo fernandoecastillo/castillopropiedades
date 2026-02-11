@@ -8,8 +8,8 @@ const dmSans = DM_Sans({ subsets: ['latin'], variable: '--font-dm-sans' })
 const playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair' })
 
 export const metadata: Metadata = {
-  title: 'Habitat Inmobiliaria | Encontra tu proximo hogar',
-  description: 'Inmobiliaria premium con las mejores propiedades en venta y alquiler. Departamentos, casas y mas.',
+  title: 'F. Castillo Propiedades | Encontra tu proximo hogar',
+  description: 'F. Castillo Propiedades - Inmobiliaria en Mar del Plata. Propiedades en venta y alquiler. Departamentos, casas, terrenos y mas.',
 }
 
 export default function RootLayout({
